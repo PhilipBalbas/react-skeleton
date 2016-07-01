@@ -1,9 +1,9 @@
 {
   "name": "react-skeleton",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "watchify src/main.jsx -v -t [babelify --presets [ react ] ] -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/PhilipBalbas/react-skeleton/issues"
   },
-  "homepage": "https://github.com/PhilipBalbas/react-skeleton#readme"
+  "homepage": "https://github.com/PhilipBalbas/react-skeleton#readme",
+  "description": "",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "watchify": "^3.7.0"
+  }
 }
